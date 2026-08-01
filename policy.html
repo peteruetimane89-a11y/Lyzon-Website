@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy | LYZON Engineering & Services, Lda</title>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16'
+                        },
+                        electric: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 12px 24px -16px rgba(2, 6, 23, 0.25)',
+                        lift: '0 18px 40px -20px rgba(2, 6, 23, 0.35)'
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Css/style.css?v=20260521_2">
+</head>
+<body class="text-slate-900 antialiased font-sans is-loading">
+    <div id="pageLoader" aria-label="Loading">
+        <div class="loader-panel">
+            <div class="loader-brand">
+                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img loader-logo">
+            </div>
+            <div class="loader-meter">
+                <div class="loader-progress">
+                    <div class="loader-progress-bar"></div>
+                </div>
+                <div class="loader-meta">
+                    <span class="loader-status">Loading</span>
+                    <span class="loader-dots"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appShell">
+        <nav id="siteNav" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="h-20 flex items-center justify-between">
+                    <a href="index.html#home" class="flex items-center" aria-label="LYZON home">
+                        <span class="logo-shell">
+                            <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-11 md:h-12 w-auto object-contain">
+                        </span>
+                    </a>
+
+                    <div class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+                        <a href="index.html#home" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Home</a>
+                        <a href="services.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Services</a>
+                        <a href="industries.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Industries</a>
+                        <a href="projects.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Projects</a>
+                        <a href="policy.html" class="relative underline-sweep text-navy-950">Policy</a>
+                        <a href="index.html#about" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">About</a>
+                    </div>
+
+                    <div class="hidden lg:flex items-center gap-3">
+                        <a href="index.html#contact" class="px-5 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">Request Quote</a>
+                    </div>
+
+                    <button id="mobileMenuButton" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded border border-slate-200 hover:bg-slate-50 transition-colors" aria-label="Open menu">
+                        <i data-lucide="menu" class="w-6 h-6 text-navy-950"></i>
+                    </button>
+                </div>
+
+                <div id="mobileMenu" class="hidden lg:hidden pb-5">
+                    <div class="grid gap-2 pt-2">
+                        <a href="index.html#home" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Home</a>
+                        <a href="services.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Services</a>
+                        <a href="industries.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Industries</a>
+                        <a href="projects.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Projects</a>
+                        <a href="policy.html" class="px-3 py-2 rounded text-sm font-semibold text-navy-950 hover:bg-slate-50">Policy</a>
+                        <a href="index.html#about" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">About</a>
+                        <a href="index.html#contact" class="mt-2 px-4 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors text-center">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="bg-navy-950 text-white">
+                <div class="hero-grid">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+                        <div class="grid lg:grid-cols-12 gap-10 items-center">
+                            <div class="lg:col-span-7 reveal-up">
+                                <p class="inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                                    HSE Policy
+                                </p>
+                                <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Health, Safety and Environmental Policy</h1>
+                                <p class="mt-6 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                                    We are committed to safe working conditions, active employee participation, and responsible environmental performance aligned with ISO 45001:2018.
+                                </p>
+                                <div class="mt-10 flex flex-wrap gap-4">
+                                    <a href="index.html#contact" class="px-7 py-4 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">Request a Quote</a>
+                                    <a href="index.html#home" class="px-7 py-4 rounded font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">Back to Home</a>
+                                </div>
+                            </div>
+                            <div class="lg:col-span-5 reveal-right">
+                                <div class="relative">
+                                    <div class="absolute -inset-4 rounded-2xl bg-electric-400/15 blur-2xl"></div>
+                                    <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-lift">
+                                        <div class="p-8 sm:p-10 bg-gradient-to-br from-white/10 via-white/5 to-transparent">
+                                            <div class="grid gap-6">
+                                                <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                                                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-200">Standard</p>
+                                                    <p class="mt-2 text-white font-extrabold text-xl">ISO 45001:2018</p>
+                                                    <p class="mt-3 text-slate-200 text-sm leading-relaxed">Occupational Health and Safety Management System framework for risk-based prevention and continual improvement.</p>
+                                                </div>
+                                                <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                                                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-200">Principle</p>
+                                                    <p class="mt-2 text-white font-extrabold text-xl">Prevention First</p>
+                                                    <p class="mt-3 text-slate-200 text-sm leading-relaxed">Eliminate hazards, reduce risk, and build safe practices into every task and every site.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hse-policy" class="py-16 lg:py-20 bg-slate-50">
+                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="rounded-2xl bg-white border border-slate-200 p-8 md:p-10 shadow-soft reveal-up">
+                        <p class="text-slate-700 leading-relaxed text-lg">
+                            Lyzon Engineering & Services, Lda. specializes in supplying electrical, instrumentation, automation, and HVAC equipment, as well as installation and maintenance services for low- and medium-voltage electrical systems, general mechanics, solar photovoltaic systems, and related engineering.
+                        </p>
+                        <p class="mt-5 text-slate-700 leading-relaxed text-lg">
+                            Safety and environmental protection are of paramount importance to the operations of the company. Lyzon Engineering & Services, Lda. is committed to implementing an Occupational Health and Safety Management System in accordance with ISO 45001:2018.
+                        </p>
+
+                        <div class="mt-10 grid gap-10">
+                            <div>
+                                <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">What We Believe</h2>
+                                <ul class="mt-5 grid gap-4">
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">All accidents can be prevented and all work can be done safely.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Managers are responsible for the health and safety of those they control within the work environment and for encouraging the sustainable use of renewable resources.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Everyone has a duty to work safely and encourage others to do the same.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">It is possible to measure and manage the environmental impact of our activities.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Our Policy</h2>
+                                <ul class="mt-5 grid gap-4">
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Provide safe and healthy working conditions by eliminating hazards and reducing risks.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Establish safe work practices and procedures.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Train employees on occupational safety.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Eliminate unsafe conditions and unsafe acts in the workplace.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Ensure employee consultation and participation.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Create methodologies that ensure our full commitment to the continuous improvement of the Occupational Safety and Health and Environmental Management System.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Actively promote the establishment of robust and viable codes of practice and bylaws for safety, environmental protection, and pollution prevention.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Our Commitment</h2>
+                                <ul class="mt-5 grid gap-4">
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Ensure the safety of our employees and everyone who may be affected by our activities.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Empower and motivate all employees to consider environmental aspects as an integral and vital element of their daily activities.</p>
+                                    </li>
+                                    <li class="flex gap-3">
+                                        <span class="mt-0.5 w-9 h-9 rounded-lg bg-navy-50 flex items-center justify-center shrink-0">
+                                            <i data-lucide="check" class="w-4 h-4 text-electric-500"></i>
+                                        </span>
+                                        <p class="text-slate-700 leading-relaxed">Comply with legislation applicable to Occupational Health, Safety, and Environmental standards.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 rounded-2xl bg-white border border-slate-200 p-8 md:p-10 shadow-soft reveal-up">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                            <div>
+                                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Approved By</p>
+                                <p class="mt-3 text-2xl font-extrabold text-navy-950">Amone Uetimane</p>
+                                <p class="mt-2 text-slate-700 font-semibold">Chief Executive Officer (CEO)</p>
+                            </div>
+                            <div class="md:text-right">
+                                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Approved Date</p>
+                                <p class="mt-3 text-lg font-extrabold text-navy-950">25 / 11 / 2025</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-slate-200 flex items-center gap-3 text-sm font-semibold text-slate-600">
+                            <i data-lucide="file-check-2" class="w-5 h-5 text-electric-500"></i>
+                            <span>This policy applies to all company operations, workplaces, and activities.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-navy-950 border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+                <div class="grid md:grid-cols-4 gap-10">
+                    <div>
+                        <div class="flex items-center">
+                            <span class="logo-shell-footer">
+                                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-10 w-auto object-contain">
+                            </span>
+                        </div>
+                        <p class="mt-5 text-sm text-slate-200 leading-relaxed">
+                            LYZON Engineering & Services, Lda — Industrial electrical materials and engineering support since 2009.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Company</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors" href="index.html#about">About</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="industries.html">Industries</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="projects.html">Projects</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="policy.html">Policy</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Services</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">Electrical Design</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">LV Systems</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">MV Infrastructure</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Reach Us</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="tel:+258864859969">
+                                <i data-lucide="phone" class="w-4 h-4 text-electric-300"></i>
+                                <span>+258 864 859 969</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="policy.html#hse-policy">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-electric-300"></i>
+                                <span>HSE Policy</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex justify-end">
+                    <a href="#hse-policy" class="iso-floating-badge" aria-label="View ISO 45001 certification and policy">
+                        <img src="pictures/iso-45001-certification.png" alt="Certified ISO 45001 with Bureau Veritas and UKAS management systems marks">
+                    </a>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-semibold">
+                    <p>&copy; 2026 LYZON Engineering & Services, Lda. All rights reserved.</p>
+                    <div class="flex items-center gap-6">
+                        <a href="policy.html#hse-policy" class="hover:text-white transition-colors">HSE Policy</a>
+                        <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="backToTopButton" class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="js/script.js?v=20260521_3"></script>
+</body>
+</html>
